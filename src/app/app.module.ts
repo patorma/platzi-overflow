@@ -9,6 +9,8 @@ import {MatIconModule}from '@angular/material/icon';
 import { HeaderComponent } from './components/header/header.component';
 import { QuestionDetailComponent } from './question/question-detail/question-detail.component';
 import {MatCardModule} from '@angular/material/card';
+import { MomentModule } from 'ngx-moment';
+// import 'moment/locale/es';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MomentModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
