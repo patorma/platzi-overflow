@@ -10,13 +10,19 @@ import { HeaderComponent } from './components/header/header.component';
 import { QuestionDetailComponent } from './question/question-detail/question-detail.component';
 import {MatCardModule} from '@angular/material/card';
 import { MomentModule } from 'ngx-moment';
+import { AnswerFormComponent } from './answer/answer-form.component';
+
+import { FormsModule } from "@angular/forms";
+import {MatInputModule} from '@angular/material/input'; 
+import {MatButtonModule} from '@angular/material/button'; 
 // import 'moment/locale/es';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    QuestionDetailComponent
+    QuestionDetailComponent,
+    AnswerFormComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +31,10 @@ import { MomentModule } from 'ngx-moment';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MomentModule 
+    MomentModule,
+    FormsModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
