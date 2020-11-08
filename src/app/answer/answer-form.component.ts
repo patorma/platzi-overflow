@@ -16,7 +16,7 @@ export class AnswerFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(){
-      console.log(this.respuesta.description)
+  onSubmit(form:NgForm){
+      console.log(form.value.description)
   }
 }
