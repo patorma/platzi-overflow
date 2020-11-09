@@ -1,0 +1,9 @@
+form {
+    /*alinear los elementos sencillamente*/
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 40px auto;
+    /*magen de arriba*/
+    margin-top: 20px;
+}
